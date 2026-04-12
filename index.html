@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEGINNER BHAI | Official Access</title>
+    
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '3135144523541125'); 
+    fbq('track', 'PageView');
+    </script>
+
+    <style>
+        body {
+            margin: 0;
+            background-color: #000;
+            color: white;
+            font-family: 'Inter', -apple-system, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .card {
+            background-color: #0f0f0f;
+            width: 340px;
+            padding: 50px 20px;
+            border-radius: 28px;
+            text-align: center;
+            border: 1px solid #1a1a1a;
+            box-shadow: 0 0 50px rgba(255, 215, 0, 0.05); 
+        }
+
+        h1 {
+            font-size: 28px;
+            text-transform: uppercase;
+            margin: 0 0 10px 0;
+            font-weight: 900;
+            letter-spacing: 1px;
+            color: #fff;
+        }
+
+        .sub-headline {
+            color: #FFD700;
+            font-weight: 700;
+            font-size: 14px;
+            margin-bottom: 35px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Security Slide Section */
+        .security-gate {
+            background: #151515;
+            padding: 20px;
+            border-radius: 20px;
+            margin-bottom: 25px;
+            border: 1px dashed #333;
+        }
+
+        .gate-text {
+            font-size: 11px;
+            color: #666;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 30px;
+        }
+
+        .switch input { opacity: 0; width: 0; height: 0; }
+        .slider {
+            position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0;
+            background-color: #222; transition: .4s; border-radius: 34px;
+        }
+        .slider:before {
+            position: absolute; content: ""; height: 22px; width: 22px; left: 4px; bottom: 4px;
+            background-color: white; transition: .4s; border-radius: 50%;
+        }
+        input:checked + .slider { background-color: #FFD700; }
+        input:checked + .slider:before { transform: translateX(30px); }
+
+        .cta-button {
+            display: block;
+            width: 100%;
+            background: linear-gradient(45deg, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+            background-size: 200% auto;
+            color: #000;
+            text-decoration: none;
+            padding: 18px 0;
+            border-radius: 50px;
+            font-size: 19px;
+            font-weight: 800;
+            border: none;
+            box-shadow: 0 10px 25px rgba(186, 148, 62, 0.2);
+            transition: 0.3s;
+            text-transform: uppercase;
+        }
+
+        .disabled {
+            background: #1a1a1a !important;
+            color: #444 !important;
+            box-shadow: none !important;
+            cursor: not-allowed;
+        }
+
+        .trust-text { margin-top: 30px; font-size: 13px; color: #ffd700; font-weight: 600; }
+        .footer-details { margin-top: 10px; font-size: 10px; color: #444; letter-spacing: 1px; }
+
+        .ajs-footer {
+            margin-top: 30px;
+            font-size: 10px;
+            color: #222;
+            text-decoration: none;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>BEGINNER BHAI 🔥</h1>
+        <div class="sub-headline">Official Channel - Private Access</div>
+
+        <div class="security-gate">
+            <div class="gate-text">Slide to verify access</div>
+            <label class="switch">
+                <input type="checkbox" id="securityToggle">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <button id="mainCTA" class="cta-button disabled" disabled>
+            🚀 Join Telegram Now
+        </button>
+
+        <div class="trust-text">★ Trusted by 50,000+ members</div>
+        <div class="footer-details">100% FREE | SECURE | INSTANT UPDATES</div>
+    </div>
+
+    <a href="https://t.me/+3r5-f-xfNHNjYmNl" class="ajs-footer">ads by aj</a>
+
+    <script>
+        const toggle = document.getElementById('securityToggle');
+        const btn = document.getElementById('mainCTA');
+
+        toggle.addEventListener('change', function() {
+            if(this.checked) {
+                btn.disabled = false;
+                btn.classList.remove('disabled');
+            } else {
+                btn.disabled = true;
+                btn.classList.add('disabled');
+            }
+        });
+
+        btn.addEventListener('click', function() {
+            // Track conversion only after slide + click
+            fbq('track', 'Subscribe');
+
+            this.innerHTML = "CONNECTING...";
+            this.style.opacity = "0.7";
+
+            // Target: https://t.me/+_onVElNRl_BhNTE1
+            const p = "https://t.me/";
+            const s = ["+", "_", "o", "n", "V", "E", "l", "N", "R", "l", "_", "B", "h", "N", "T", "E", "1"].join("");
+            const target = p + s;
+
+            setTimeout(function() {
+                window.location.href = target;
+            }, 1000);
+        });
+    </script>
+
+</body>
+</html>
