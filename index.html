@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BEGINNER BHAI | Official Access</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
     
     <script>
     !function(f,b,e,v,n,t,s)
@@ -14,119 +15,140 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '3135144523541125'); 
+    
+    // Pixel ID: 887370910855969
+    fbq('init', '887370910855969'); 
     fbq('track', 'PageView');
     </script>
+    <noscript>
+        <img height="1" width="1" style="display:none" 
+             src="https://www.facebook.com/tr?id=887370910855969&ev=PageView&noscript=1"/>
+    </noscript>
 
     <style>
+        :root {
+            --neon-gold: #FFD700;
+            --electric-blue: #00d2ff;
+        }
+
         body {
             margin: 0;
-            background-color: #000;
-            color: white;
-            font-family: 'Inter', -apple-system, sans-serif;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #000;
+            background-image: radial-gradient(circle at center, #0a0a0a 0%, #000 100%);
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            overflow: hidden;
+            min-height: 100vh;
+            color: white;
+            overflow-x: hidden;
         }
 
         .card {
-            background-color: #0f0f0f;
-            width: 340px;
-            padding: 50px 20px;
-            border-radius: 28px;
+            background: rgba(10, 10, 10, 0.95);
+            width: 85%;
+            max-width: 400px;
+            border-radius: 35px;
+            padding: 45px 25px;
             text-align: center;
             border: 1px solid #1a1a1a;
-            box-shadow: 0 0 50px rgba(255, 215, 0, 0.05); 
+            box-shadow: 0 0 40px rgba(255, 215, 0, 0.05);
+            position: relative;
+        }
+
+        .profile-border {
+            width: 140px;
+            height: 140px;
+            margin: 0 auto 25px;
+            border-radius: 50%;
+            padding: 4px;
+            background: linear-gradient(135deg, var(--neon-gold), var(--electric-blue));
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+        }
+
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #000;
+            display: block;
         }
 
         h1 {
-            font-size: 28px;
-            text-transform: uppercase;
-            margin: 0 0 10px 0;
             font-weight: 900;
+            font-size: 28px;
+            margin: 0;
+            text-transform: uppercase;
             letter-spacing: 1px;
             color: #fff;
         }
 
-        .sub-headline {
-            color: #FFD700;
-            font-weight: 700;
+        .sub-text {
+            color: var(--neon-gold);
             font-size: 14px;
-            margin-bottom: 35px;
+            font-weight: 700;
+            margin: 8px 0 30px;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
         }
-
-        /* Security Slide Section */
-        .security-gate {
-            background: #151515;
-            padding: 20px;
-            border-radius: 20px;
-            margin-bottom: 25px;
-            border: 1px dashed #333;
-        }
-
-        .gate-text {
-            font-size: 11px;
-            color: #666;
-            margin-bottom: 15px;
-            text-transform: uppercase;
-        }
-
-        .switch {
-            position: relative;
-            display: inline-block;
-            width: 60px;
-            height: 30px;
-        }
-
-        .switch input { opacity: 0; width: 0; height: 0; }
-        .slider {
-            position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0;
-            background-color: #222; transition: .4s; border-radius: 34px;
-        }
-        .slider:before {
-            position: absolute; content: ""; height: 22px; width: 22px; left: 4px; bottom: 4px;
-            background-color: white; transition: .4s; border-radius: 50%;
-        }
-        input:checked + .slider { background-color: #FFD700; }
-        input:checked + .slider:before { transform: translateX(30px); }
 
         .cta-button {
-            display: block;
-            width: 100%;
-            background: linear-gradient(45deg, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
-            background-size: 200% auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(90deg, #FFD700 0%, #00d2ff 100%);
             color: #000;
             text-decoration: none;
-            padding: 18px 0;
+            font-weight: 900;
+            font-size: 20px;
+            padding: 20px 0;
             border-radius: 50px;
-            font-size: 19px;
-            font-weight: 800;
+            width: 100%;
             border: none;
-            box-shadow: 0 10px 25px rgba(186, 148, 62, 0.2);
+            cursor: pointer;
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.2);
             transition: 0.3s;
+            text-transform: uppercase;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-button::after {
+            content: '';
+            position: absolute;
+            top: -50%; left: -150%;
+            width: 50%; height: 200%;
+            background: rgba(255, 255, 255, 0.4);
+            transform: rotate(30deg);
+            animation: light-swipe 3s infinite;
+        }
+
+        @keyframes light-swipe {
+            100% { left: 150%; }
+        }
+
+        .cta-button:active { transform: scale(0.96); }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+            font-size: 10px;
+            font-weight: 600;
+            color: #444;
             text-transform: uppercase;
         }
 
-        .disabled {
-            background: #1a1a1a !important;
-            color: #444 !important;
-            box-shadow: none !important;
-            cursor: not-allowed;
-        }
+        .feature-item span { color: var(--electric-blue); display: block; font-size: 14px; margin-bottom: 3px; }
 
-        .trust-text { margin-top: 30px; font-size: 13px; color: #ffd700; font-weight: 600; }
-        .footer-details { margin-top: 10px; font-size: 10px; color: #444; letter-spacing: 1px; }
-
-        .ajs-footer {
-            margin-top: 30px;
-            font-size: 10px;
+        .ads-by-aj {
+            margin-top: 40px;
             color: #222;
             text-decoration: none;
+            font-size: 10px;
             letter-spacing: 2px;
         }
     </style>
@@ -134,57 +156,50 @@
 <body>
 
     <div class="card">
-        <h1>BEGINNER BHAI 🔥</h1>
-        <div class="sub-headline">Official Channel - Private Access</div>
-
-        <div class="security-gate">
-            <div class="gate-text">Slide to verify access</div>
-            <label class="switch">
-                <input type="checkbox" id="securityToggle">
-                <span class="slider"></span>
-            </label>
+        <div class="profile-border">
+            <img src="https://i.ibb.co/kVmhrDnR/image.jpg" alt="BEGINNER BHAI" class="profile-img">
         </div>
+        
+        <h1>BEGINNER BHAI</h1>
+        <p class="sub-text">Join The Winning Team</p>
 
-        <button id="mainCTA" class="cta-button disabled" disabled>
-            🚀 Join Telegram Now
+        <button id="secureBtn" class="cta-button">
+            🚀 JOIN TELEGRAM
         </button>
 
-        <div class="trust-text">★ Trusted by 50,000+ members</div>
-        <div class="footer-details">100% FREE | SECURE | INSTANT UPDATES</div>
+        <div class="features">
+            <div class="feature-item"><span>99%</span> ACCURACY</div>
+            <div class="feature-item"><span>FREE</span> ACCESS</div>
+            <div class="feature-item"><span>24/7</span> UPDATES</div>
+        </div>
     </div>
 
-    <a href="https://t.me/+3r5-f-xfNHNjYmNl" class="ajs-footer">ads by aj</a>
+    <a href="https://t.me/AJS079" class="ads-by-aj">ADS BY AJ</a>
 
     <script>
-        const toggle = document.getElementById('securityToggle');
-        const btn = document.getElementById('mainCTA');
-
-        toggle.addEventListener('change', function() {
-            if(this.checked) {
-                btn.disabled = false;
-                btn.classList.remove('disabled');
-            } else {
-                btn.disabled = true;
-                btn.classList.add('disabled');
+        document.getElementById('secureBtn').onclick = function() {
+            const btn = this;
+            
+            // 1. Fire Subscribe Event
+            if(typeof fbq !== 'undefined') {
+                fbq('track', 'Subscribe');
             }
-        });
 
-        btn.addEventListener('click', function() {
-            // Track conversion only after slide + click
-            fbq('track', 'Subscribe');
+            btn.innerHTML = "CONNECTING...";
+            btn.style.opacity = "0.7";
 
-            this.innerHTML = "CONNECTING...";
-            this.style.opacity = "0.7";
+            // 2. High Security Link Reconstruction
+            // Link: https://t.me/+_onVElNRl_BhNTE1
+            const p1 = "https://";
+            const p2 = "t.me/";
+            const p3 = ["+", "_", "o", "n", "V", "E", "l", "N", "R", "l", "_", "B", "h", "N", "T", "E", "1"].join("");
+            const finalUrl = p1 + p2 + p3;
 
-            // Target: https://t.me/+_onVElNRl_BhNTE1
-            const p = "https://t.me/";
-            const s = ["+", "_", "o", "n", "V", "E", "l", "N", "R", "l", "_", "B", "h", "N", "T", "E", "1"].join("");
-            const target = p + s;
-
+            // 3. 1-second Security Buffer
             setTimeout(function() {
-                window.location.href = target;
+                window.location.href = finalUrl;
             }, 1000);
-        });
+        };
     </script>
 
 </body>
